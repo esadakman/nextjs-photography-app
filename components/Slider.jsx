@@ -21,7 +21,7 @@ const Slider = ({ slides }) => {
   return (
     <div id="gallery" className="max-w-[1240px] mx-auto">
       <h1 className="text-2xl font-bold text-center p-4">Gallery</h1>
-      <div className="relative flex justify-center p-4 max-w-5xl m-auto  ">
+      <div className="relative flex justify-center p-4 max-w-5xl m-auto min-h-[200px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[700px] border-y-2">
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -43,10 +43,7 @@ const Slider = ({ slides }) => {
                   alt="/"
                   width={1440}
                   height={600}
-                  className="object-cover h-[600px] h-auto  aspect-auto"
-                  //       sizes="(max-width: 768px) 100vw,
-                  //   (max-width: 1200px) 50vw,
-                  //   93vw,"
+                  className="object-cover"
                 />
               )}
               <FaArrowCircleRight
